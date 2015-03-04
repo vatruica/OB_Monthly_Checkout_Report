@@ -20,4 +20,4 @@ part.add_header('Content-Disposition', 'attachment; filename="file.csv"')
 msg.attach(part)
 
 server = smtplib.SMTP("localhost")
-server.sendmail("guru3arthas@yahoo.com", "romanescu3@gmail.com", msg.as_string())
+server.sendmail("<sender_email>", "<receiver_email>", msg.as_string())
